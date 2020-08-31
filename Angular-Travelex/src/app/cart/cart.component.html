@@ -1,0 +1,50 @@
+<div class="contact">
+    <div class="container pt-5">
+        <div class="row justify-content-start m-auto w-50 h-100 pt-5">
+            <div class="cart-item" *ngFor="let item of items">
+                <div class="card p-1" style="width: 10rem; margin: 0 auto"><img class="card-img-top" src="{{ item.image }}">
+
+                    <p class="text-center">{{ item.destination }} </p>
+                    <p class="text-center"> {{ item.price }}€</p>
+                    <p class="text-center"><small class="text-muted bg-white">{{ item.date }}</small> </p>
+                    <p class="text-center"><small class="text-muted bg-white">{{ item.duration }}</small> </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="text-center p-2 mt-5 text-white">Total cost: {{totalCost}}</p>
+    </div>
+
+
+    <form class="d-flex flex-column w-50 m-auto  p-3" [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+
+        <div class="d-flex flex-column text-white-50">
+            <label for="fname">
+     First Name
+   </label>
+            <input id="fname" type="text" formControlName="fname">
+        </div>
+        <div class="d-flex flex-column text-white-50">
+            <label for="lname">
+     Last Name
+   </label>
+            <input id="lname" type="text" formControlName="lname">
+        </div>
+
+        <div class="d-flex flex-column text-white-50">
+            <label for="address">
+     Address
+   </label>
+            <input id="address" type="text" formControlName="address">
+        </div>
+        <div class="d-flex flex-column text-white-50">
+            <label for="phone">
+     Phone number
+   </label>
+            <input id="phone" type="text" formControlName="phone">
+        </div>
+
+        <button class="btn btn-outline-primary mt-3" type="submit">Purchase</button>
+
+    </form>
+</div>

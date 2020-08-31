@@ -1,0 +1,64 @@
+.navbar,
+a {
+    background-color: black;
+    color: #bfaba2 !important;
+    justify-content: center;
+}
+
+svg {
+    padding-bottom: 1vw;
+}
+
+.navbar-toggler {
+    background-color: #bfaba2;
+}
+
+.nav-link,
+a {
+    padding: 1rem 2rem !important;
+    font-size: 2.5vw;
+}
+
+#hover:hover {
+    color: red !important;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.navbar-brand:hover {
+    color: white !important;
+}
+
+div ul li a:hover {
+    color: white !important;
+}
+
+.clip {
+    background-color: black;
+    background-size: contain;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 50% 100%, 0 50%);
+    height: 35vw;
+    h2 {
+        color: #bfaba2;
+        width: 70%;
+        padding-top: 15vw;
+        margin: 0 auto;
+        font-style: italic;
+        font-size: 2.5vw;
+    }
+    h3 {
+        color: #bfaba2;
+        width: 70%;
+        margin: 0 auto;
+        font-style: italic;
+        font-size: 2.5vw;
+        text-align: center;
+    }
+}
+.navfix {
+    margin-top: 10px;
+}
+
+.navfix2 {
+    margin-top: -2px;
+}

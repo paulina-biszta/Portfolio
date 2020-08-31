@@ -1,0 +1,20 @@
+#but {
+    font-size: 2vw;
+    background-color: #64a19d;
+    border: none;
+    border-radius: 5%;
+    width: 8vw;
+    height: 3vw;
+    transition: width 500ms, height 500ms;
+}
+
+#but:hover {
+    background-color: #467370;
+    width: 9vw;
+    height: 4vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,52 @@
+<div class="contact w-50 p-4 rounded">
+    <div class="d-flex justify-content-center daddy container-fluid">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10638.111382747451!2d16.359429!3d48.196448!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d07866f5ea789%3A0x5c320007be5849de!2sKettenbr%C3%BCckengasse%2023%2C%201050%20Wien!5e0!3m2!1spl!2sat!4v1593522360492!5m2!1spl!2sat"
+            width="700" height="400" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="m-auto"></iframe>
+    </div>
+    <h1 class="text-center mt-4">You can find us here!</h1>
+    <h2 class="text-center">Patinik Paulke</h2>
+    <h3 class="text-center">
+        Kettenbrückengasse <br /> 23/2/12, 1050 Vienna
+    </h3>
+</div>
+
+<div class="container-fluid p-0 mainblock">
+    <div class="photo">
+        <div class="wrap-contact100">
+
+            <form class="contact100-form validate-form" [formGroup]="contact" (ngSubmit)="addMessage()">
+
+                <div class="wrap-input100 validate-input" data-validate="Name is required">
+                    <span class="titlex contact100-form-title text-center" style="font-size: 5vw;">
+        Get in Touch
+      </span>
+                    <input class="form-control" id="name" type="text" name="name" placeholder="Name" />
+                    <label class="label-input100" for="name">
+      
+          <span class="lnr lnr-user"></span>
+        </label>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <input class="form-control" id="email" type="text" name="email" placeholder="Email" />
+                    <label class="label-input100" for="email">
+          <span class="lnr lnr-envelope"></span>
+        </label>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate="Phone is required">
+                    <input class="form-control" id="phone" type="text" name="phone" placeholder="Phone" />
+                    <label class="label-input100" for="phone">
+          <span class="lnr lnr-phone-handset"></span>
+        </label>
+                </div>
+                <div class="wrap-input100 validate-input">
+                    <textarea class="form-control" name="message" placeholder="Your message..."></textarea>
+                </div>
+                <div class="d-flex wrap justify-content-center">
+                    <button type="submit" class="d-flex justify-content-center btn btn-md">
+          Send
+        </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

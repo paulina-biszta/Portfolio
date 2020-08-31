@@ -1,0 +1,53 @@
+        body {
+            line-height: 0em;
+        }
+        
+        footer {
+            background-color: black;
+            bottom: 0;
+            padding-bottom: 1vw;
+        }
+        
+        .d-flex {
+            flex-flow: column;
+            align-items: center;
+            height: 12vw;
+            position: relative;
+            bottom: 0;
+        }
+        
+        #sm {
+            filter: grayscale(1) invert(1);
+            opacity: 1;
+            width: 2vw;
+            margin: 1vw 1vw;
+            transition: all ease 1s;
+        }
+        
+        #sm:hover {
+            cursor: pointer;
+            transition: all ease 0.5s;
+            filter: none;
+        }
+        
+        h1 {
+            padding-top: 1vw;
+            color: white;
+            transition: all ease 1s;
+            margin: 0;
+            font-size: 2vw;
+        }
+        
+        h1:hover {
+            cursor: pointer;
+            color: rgb(129, 106, 106);
+            text-shadow: 1px 1px 1px white;
+            transition: all ease 1s;
+        }
+        
+        a {
+            color: rgb(75, 75, 75);
+            text-align: center;
+            padding-top: 1vw;
+            font-size: 1.5vw;
+        }

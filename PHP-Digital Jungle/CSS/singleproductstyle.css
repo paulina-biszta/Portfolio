@@ -1,0 +1,174 @@
+nav {
+  display: block;
+  position: fixed;
+  z-index: 1000;
+  background-color: white;
+  padding: 0;
+  top: 2vh;
+  left: 10vw;
+  width: 80vw;
+}
+
+nav ul {
+  margin-bottom: 0;
+}
+
+.productcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  position: fixed;
+}
+
+.productcontainer img {
+  width: 50vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-clip-path: polygon(100% 0, 100% 34%, 100% 100%, 0 100%, 41% 0);
+          clip-path: polygon(100% 0, 100% 34%, 100% 100%, 0 100%, 41% 0);
+  opacity: 0.8;
+}
+
+.productcontainer .text {
+  margin-left: 10vw;
+}
+
+.productcontainer .text h1 {
+  font-size: 5vh;
+  z-index: 1;
+}
+
+.productcontainer .text p {
+  font-size: 1.5em;
+  z-index: 1;
+  margin: 3vh 0;
+}
+
+.productcontainer .text .discount {
+  position: relative;
+  background-color: #d81515;
+  color: white;
+  font-weight: 900;
+  padding: 10px;
+  margin-right: 1vw;
+}
+
+.productcontainer .text .notavailable {
+  position: absolute;
+  background-color: #158466;
+  padding: 1vh 1vw;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.productcontainer .text .cheaper {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.productcontainer .text h1.verybig {
+  position: absolute;
+  font-size: 30vh;
+  top: 10vh;
+  color: #f0f0f0;
+  font-weight: 700;
+  opacity: 0.8;
+  z-index: -1;
+  margin-left: -8vw;
+  line-height: 0.8;
+  text-overflow: clip;
+}
+
+.productcontainer .productcontent {
+  width: 50vw;
+}
+
+.productcontainer .buybutton {
+  color: white;
+  background-color: #158466;
+  padding: 0vh 1vw;
+  border-radius: 50px;
+}
+
+.productcontainer input {
+  width: 50px;
+  border: none;
+  border-bottom: 1px solid #158466;
+  outline: none;
+  text-align: center;
+  margin-right: 2vw;
+}
+
+.productcontainer input:focus, .productcontainer input:hover, .productcontainer input:active {
+  outline: none;
+}
+
+.reviews {
+  background-color: white;
+  position: absolute;
+  width: 100vw;
+  top: 100vh;
+  min-height: 100vh;
+  padding: 10vh 10vw;
+}
+
+a.goback {
+  position: absolute;
+  font-size: 5vh;
+  color: #c7c7c7;
+  bottom: 2vh;
+  left: 2vw;
+  font-weight: 600;
+}
+
+a.goback:hover {
+  cursor: pointer;
+  color: black;
+}
+
+@media only screen and (max-width: 1300px) {
+  .productcontainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .productcontainer img {
+    position: relative;
+    top: -20vh;
+    width: 100vw;
+    height: 50vh;
+    -webkit-clip-path: none;
+            clip-path: none;
+    opacity: 1;
+  }
+  .productcontainer .productcontent {
+    margin-top: -10vh;
+    width: 100vw;
+  }
+  .productcontainer .productcontent h1.verybig {
+    display: none;
+  }
+  .productcontainer .productcontent h1 {
+    font-size: 2em;
+  }
+  .productcontainer .productcontent p, .productcontainer .productcontent span.discount, .productcontainer .productcontent span.cheaper {
+    font-size: 15px;
+    margin: 2vh 1vw;
+  }
+  .card {
+    width: 80vw;
+    margin: 5vh 0 !important;
+    max-width: 80vw !important;
+  }
+}
+/*# sourceMappingURL=singleproductstyle.css.map */

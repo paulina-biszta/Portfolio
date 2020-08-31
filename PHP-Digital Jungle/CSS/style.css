@@ -1,0 +1,15 @@
+.bg {
+    background-image: url(https://images.pexels.com/photos/3076899/pexels-photo-3076899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    height: 50%;
+    min-height: 90vh;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg h1 {
+    padding: 15% 0 0 0;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 20px #038303, 0 0 40px #057c19, 0 0 55px #dddddd, 0 0 75px #292929, -40px -40px 0px rgba(224, 224, 224, 0);
+}

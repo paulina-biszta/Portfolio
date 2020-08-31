@@ -1,0 +1,135 @@
+body {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.jumbotron {
+    background: linear-gradient(180deg, rgba(83, 157, 168, 1) 0%, rgba(255, 255, 255, 1) 68%);
+    color: white;
+    padding-left: 13.5vw !important;
+    border-radius: 0 !important;
+}
+
+.jumbotron>p,
+h6 {
+    color: rgba(83, 157, 168, 1);
+}
+
+.nav-link,
+.fa {
+    color: white !important;
+    font-size: 1.5rem;
+}
+
+a:hover {
+    color: tomato !important;
+}
+
+ul,
+a:hover {
+    background-color: transparent !important;
+}
+
+img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.card {
+    border: none !important;
+    text-align: justify;
+}
+
+h6 {
+    text-align: right;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cat-item>a {
+    color: rgba(0, 0, 0, 0.7) !important;
+    font-size: 1.5rem;
+    text-decoration: none !important;
+}
+
+h5 {
+    font-style: italic;
+    color: white;
+    font-size: 1.3rem;
+    margin: 0 !important;
+}
+
+h5>ul>li>a {
+    text-decoration: none !important;
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.btn-outline-primary {
+    background-color: #BCD6C9 !important;
+    border: none !important;
+    color: white !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: tomato !important;
+}
+
+.avatar {
+    width: 5%;
+    height: 5%;
+}
+
+.comment-list,
+.children {
+    list-style: none;
+}
+
+#submit {
+    background-color: rgba(83, 157, 168, 1);
+    border-radius: 7px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 19px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+#submit:active {
+    position: relative;
+    top: 1px;
+}
+
+.comments-title {
+    text-align: center;
+    color: rgba(83, 157, 168, 1);
+    font-size: 1.5rem;
+}
+
+#reply-title {
+    color: rgba(83, 157, 168, 1);
+    font-size: 1.5rem;
+}
+
+#sidebar {
+    border-left: 2px solid tomato;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+    #sidebar {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 2vw;
+    }
+    .sidebar-module {
+        padding: 2vw;
+    }
+}

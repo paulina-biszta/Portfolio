@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap')
+*
+    margin: 0
+    padding: 0
+    font-family: 'Nunito', sans-serif
+
+html
+    scroll-behavior: smooth
+
+body
+    overflow-x: hidden
+
+
+header
+    height: 100vh
+    background-color: #E1D7BD
+
+    .heroplant1
+        position: absolute
+        width: 80vw
+        left: 0
+        z-index: 0
+        animation-name: movingleave
+        animation-duration: 3s
+       
+
+        @keyframes movingleave 
+            0%
+                transform: translate(-100%, -100%)
+            
+            50%
+                transform: translate(1%, 1%)
+
+            100%
+                transform: translate(0%, 0%)
+            
+    
+    .heroplant2
+        position: absolute
+        width: 32vw
+        right: 0
+        bottom: 0
+        z-index: 3
+        animation-name: movingleave2
+        animation-duration: 3s
+
+        @keyframes movingleave2 
+            0%
+                transform: translate(200%, 200%)
+            
+            50%
+                transform: translate(-1%, -1%)
+
+            100%
+                transform: translate(0%, 0%)
+            
+
+
+    
+
+    
+    .heading
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: colunmn
+        height: 100vh
+        width: 100vw
+
+        .front
+            top: 50vh
+            z-index: 3
+            border: white solid 5vh
+
+        .back
+            top: 25vh
+            z-index: 2
+
+
+        h1
+            position: absolute
+            color:  white
+            font-size: 30vh
+            font-weight: 600
+            line-height: 0.9
+
+
+
+nav
+    display: block
+    width: 100vw
+    padding: 2vh 2vw
+
+    a 
+        color: black
+        text-decoration: none
+
+    a:hover
+        color: white
+        background-color: black
+        text-decoration: none
+
+    .mobilenav
+        display: none
+
+    .searchresult
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+
+        .singlesearch
+            height: 20vh
+            width: 20vh
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 1vh 1vw
+
+            img
+                height: 100%
+                width: 100%
+                object-fit: cover
+
+            a
+                position: absolute
+                padding: auto
+                background-color: #158466
+                min-width: 10vw
+                min-height: 40px
+                color: white
+                text-align: center
+                margin: 10px
+                cursor: pointer
+                font-size: 1.5em
+                font-weight: 700
+
+    
+    ul
+        display: flex
+        justify-content: center
+        list-style-type: none
+
+        li
+            margin: 0 2.5vw
+            padding: 5px
+
+        li:hover
+            cursor: pointer
+        
+        #search
+            border: none
+            border-bottom: 2px solid grey
+
+        #search:before
+            content: "a"
+
+        #search:focus, #search:hover, #search:active
+            border: none
+            border-bottom: 2px solid grey
+            outline: none
+            
+        .nohover:hover
+            background-color: white
+            color: black
+        .fa
+            margin-right: 5px
+
+
+.sticky 
+    position: fixed
+    top: 0
+    background-color: white
+    z-index: 30
+    border-bottom: green solid 1px
+
+
+section
+    position: absolute
+    width: 100vw
+    z-index: 3
+
+    h1.title
+        margin: 15vh 5vw 2vh 5vw
+        font-size: 10vh
+        border-bottom: 1.5vh solid #065446
+        display: inline-block 
+        color: #065446
+
+    .grid-container 
+        max-width: 100vw
+        display: grid
+        grid-template-columns: 31.75vw 31.75vw 31.75vw
+        grid-gap: 1vw
+        padding: 1vh 1vw
+        
+        
+        .item 
+            height: 28vh
+            background-color: #158466
+            text-align: center
+            font-size: 30px
+            display: flex
+            justify-content: center
+            align-items: center
+            transition-duration: .5s
+
+            #map 
+                height: 100%
+                width: 100%
+
+            h1
+                position: absolute
+                background-color: #158466
+                color: white
+                padding: 1vh 2vw
+                font-size: 3vh
+                transition-duration: .5s
+
+                a
+                    text-decoration: none
+                    color: inherit
+
+            img
+                object-fit: cover
+                width: 100%
+                height: 100%
+                opacity: 0.7
+                object-position: center
+                transition-duration: .5s
+            
+        
+        .item1  
+            height: 58vh
+            grid-row-start: 1
+            grid-row-end: 3
+            grid-column-start: 1
+            grid-column-end: 3
+            transition-duration: .5s
+
+            &:hover h1
+                display: none!important
+        
+        .item5
+            display: flex
+            justify-content: center
+
+            &:hover h1
+                background-color: #158466!important
+                opacity: 1
+
+            button
+                z-index: 1
+                color: white
+                font-size: 3vh
+                margin: 0 .5vw
+                padding: 0 1vw
+                border-radius: 50px
+                background-color: #106952
+                position: relative
+                cursor: pointer
+                border: 3px solid white
+                transition: all 0.1s ease-in-out
+
+                &:hover 
+                    transition: all 0.3s ease 0s
+                    background-color: #1bb38a
+
+                &:active 
+                    opacity: 1
+                    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1)
+                &:focus
+                    outline: none
+                  
+                
+            div
+                display: flex
+                flex-direction: row
+                width: 100%
+
+        div:hover
+            cursor: pointer
+
+            h1
+                color: white
+                background-color: #1bb38a
+
+            img
+                opacity: 1
+
+            
+
+
+    .product-container 
+        display: grid
+        padding: 5vh 4vw
+        grid-template-columns: 18.5vw 18.5vw 18.5vw 18.5vw 18.5vw
+
+        .product
+            margin: 2vh 1vw
+            display: flex
+            flex-direction: column
+            scroll-margin-top: 30vh
+            
+            .category
+                text-transform: uppercase
+
+
+
+            img
+                object-fit: cover
+                width: 100%
+                height: 16vw
+            h1
+                margin: 1vh 0 0 0 
+                color: black
+                font-size: 2vh
+
+            p, a
+                color: black
+
+            
+            .discount
+                position: relative
+                right: 0
+                top: -6vh
+                background-color: #d81515
+                color: white
+                font-weight: 900
+                padding: 10px
+                float: right
+            
+            .notavailable
+
+                position: absolute
+                background-color: #158466
+                padding: 1vh 1vw
+                color: white
+                font-weight: 700
+                text-transform: uppercase
+            
+            .cheaper
+                color: grey
+                text-decoration: line-through
+    .about
+        padding: 5vh 5vw
+
+        p
+            font-size: 2vh
+
+
+footer
+    position: relative
+    margin-top: 30vh
+    height: 10vh
+    bottom: 0
+
+    h1
+        text-align: center
+        font-weight: 200
+        font-size: 2vh
+        font-weight: 300
+        position: relative
+        z-index: 11
+    
+
+.plant
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 50vw
+    object-fit: cover
+
+.plant2
+    position: relative
+    float: right
+    margin-top: -10vh
+    bottom: 0
+    right: 0
+    width: 50vw
+    object-fit: cover
+
+
+//modal
+
+/* The Modal (background) */
+.modal 
+    display: none 
+    position: fixed 
+    z-index: 1
+    left: 0
+    top: 0
+    width: 100% /* Full width */
+    height: 100% /* Full height */
+    overflow: auto /* Enable scroll if needed */
+    background-color: rgb(0,0,0) /* Fallback color */
+    background-color: rgba(0,0,0,0.4) /* Black w/ opacity */
+    -webkit-animation-name: fadeIn /* Fade in the background */
+    -webkit-animation-duration: 0.4s
+    animation-name: fadeIn
+    animation-duration: 0.4s
+
+
+/* Modal Content */
+.modal-content 
+    position: absolute!important
+    bottom: 0
+    background-color: #fefefe
+    width: 100%
+    -webkit-animation-name: slideIn
+    -webkit-animation-duration: 0.4s
+    animation-name: slideIn
+    animation-duration: 0.4s
+
+
+/* The Close Button */
+.close 
+    color: white
+    float: right
+    font-size: 4vh
+    font-weight: bold
+
+
+.close:hover,
+.close:focus 
+    color: #000
+    text-decoration: none
+    cursor: pointer
+
+
+.modal-header 
+    padding: 2px 16px
+    background-color: white
+    color: #158466
+    background-color: #158466
+    height: 5vh
+
+
+.modal-body
+    min-height: 40vh
+
+    div
+        display: flex
+        justify-content: center
+        align-items: center
+        min-height: 40vh
+
+        a
+            font-size: 2em
+
+        button
+            width: 30vw
+            padding: 2vh 2vw
+            background-color: #158466
+            color: white
+            margin: 2vh 2vw
+            font-size: 1em
+            border-radius: 50px
+        
+        button:hover
+            cursor: pointer
+            background-color: #147e62
+            
+
+.modal-footer 
+    padding: 2px 16px
+    background-color: #158466
+    color: white
+
+iframe
+    width: 98vw
+    height: 60vh
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn 
+    from
+        bottom: -300px
+        opacity: 0 
+    to
+        bottom: 0
+        opacity: 1
+
+
+@keyframes slideIn 
+  from 
+        bottom: -300px
+        opacity: 0
+  to 
+        bottom: 0
+        opacity: 1
+
+
+@-webkit-keyframes fadeIn 
+    from
+        opacity: 0 
+    to
+        opacity: 1
+
+
+@keyframes fadeIn 
+    from
+        opacity: 0 
+    to 
+        opacity: 1
+
+
+
+
+
+
+@media only screen and (max-width: 1300px)
+
+    body
+        .plant2
+            margin-top: -20vh
+            width: 100vw
+        .plant
+            width: 100vw
+
+
+
+        header
+
+            .front
+
+
+                img
+                    object-fit: cover
+                    object-position: 53%
+
+
+            .back
+
+    
+                img
+                    object-fit: cover
+                    object-position: 53%
+            .heroplant1
+                width: 100vw
+                
+            .heroplant2
+                width: 50vw
+
+
+
+            .heading
+
+
+                h1
+                    font-size: 10vh
+                    
+                
+                .front
+                    border: white solid 2vh
+                    top: 47vh
+                    padding: 0 2vw
+                
+                .back
+                    top: 30vh
+                    padding: 0 2vw
+
+
+        nav
+            padding: 0
+
+
+
+            .mobilenav
+                display: flex
+                flex-direction: row
+                justify-content: flex-end
+
+            .mobilenav *:hover, .mobilenav *:active
+                background-color: white
+                user-select: none
+
+            .fa-bars
+                font-size: 3vh
+                color: black
+                margin: 0 auto
+                user-select: none
+
+            #nav
+                display: none
+                position: absolute
+                top: 5vh
+                border-bottom: green solid 1px
+
+
+
+            ul
+                justify-content: flex-end
+                flex-direction: column
+                align-items: flex-end
+                list-style-type: none
+                width: 100%
+                background-color: white
+                z-index: 5
+                
+
+                li
+                    color: black
+                    background-color: white
+                    text-align: right
+                    padding: 2vh 5vw
+                    background-color: white
+
+            a
+                color: black
+                text-decoration: none
+                font-size: 2vh
+            
+            
+
+
+
+
+        section
+            .product-container 
+                display: grid
+                padding: 5vh 4vw
+                grid-template-columns: 92.5vw
+                .product
+                    margin: 1vh 1vw
+                    padding: 2vh 5vw
+                    
+                    img
+                        height: 50vw
+            .grid-container 
+                grid-template-columns: 100vw
+                .item1  
+                    height: 50vh
+                    grid-row-start: 1
+                    grid-row-end: 1
+                    grid-column-start: 1
+                    grid-column-end: 1
+
+                .item5
+                    grid-column-start: 1
+                    grid-column-end: 1
+                    display: flex
+                    justify-content: center
+
+        footer
+            margin-top: 20vh
+            .parallax4
+                width: 60vw
+            h1
+                text-shadow: 4px 4px 4px #ffffff
+
+       

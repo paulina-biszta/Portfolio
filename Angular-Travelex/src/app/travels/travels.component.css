@@ -1,0 +1,29 @@
+.card {
+    border: none;
+    margin: 3vw 2vw;
+}
+
+h3 {
+    padding-bottom: 1vw;
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#dark {
+    background-color: black;
+}
+
+.card-title {
+    color: rgba(95, 199, 218, 0.8);
+}
+
+.imp {
+    font-size: 1.5rem;
+    color: rgba(95, 199, 218, 0.8);
+}

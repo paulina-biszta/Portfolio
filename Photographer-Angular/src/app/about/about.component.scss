@@ -1,0 +1,124 @@
+.row {
+    width: 100%;
+    justify-content: center;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row-cols-md-1>* {
+    width: 45vw;
+    background-color: #bfaba2;
+    div {
+        border: none;
+    }
+}
+
+.card-body {
+    background-color: black !important;
+    color: #bfaba2;
+    h5 {
+        font-size: 3vw;
+        text-align: right;
+    }
+    h4 {
+        text-align: right;
+    }
+    p {
+        font-size: 1.5vw;
+    }
+}
+
+.btn {
+    background-color: black;
+    text-align: center;
+    width: 10vw;
+    color: white;
+    font-size: 2vw;
+    margin: 3vw;
+    padding: 0.5vw;
+}
+
+.btn:hover {
+    color: #aa988f;
+}
+
+.card-text {
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 1vw 5vw;
+}
+
+a {
+    font-size: 2vw;
+    background-color: black;
+    color: #bfaba2 !important;
+    justify-content: center;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+
+a:hover {
+    color: white !important;
+    transition: ease-in-out 0.3s;
+}
+
+.white {
+    margin-top: 3vw;
+    background-color: black;
+    width: 100%;
+    height: 40vw;
+    clip-path: polygon(50% 0, 50% 0, 100% 45%, 100% 100%, 0 100%, 0 45%);
+    justify-content: center;
+    flex-wrap: wrap;
+    h1 {
+        padding-top: 6vw;
+        font-size: 4vw;
+        color: white;
+    }
+    img {
+        width: 20%;
+    }
+}
+
+.client-list {
+    background-color: black;
+    display: flex;
+    padding-bottom: 3vw;
+    justify-content: space-evenly;
+    img {
+        filter: grayscale(1) invert(1);
+        opacity: 1;
+        width: 12vw;
+        margin: 0 12px;
+        transition: all ease 1s;
+        padding: 1vw;
+    }
+}
+
+.blockquote-footer {
+    font-size: 1.5vw;
+}
+
+.card-header {
+    font-size: 1.8vw;
+}
+
+p {
+    font-size: 1.2vw;
+}
+
+#hover:hover {
+    transition: all ease 1s;
+    filter: none;
+}
+
+.nav-pills .nav-link.active {
+    background-color: black;
+}
+
+@media screen and(max-width:564px) {
+    .row-cols-md-2>* {
+        max-width: 100% !important;
+    }
+}

@@ -1,0 +1,118 @@
+body {
+    line-height: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.papa {
+    background-image: url(../../assets/img/wed.jpg);
+    background-size: cover;
+    height: 70vh;
+    min-height: 30vh;
+    text-shadow: 2px 2px 2px black;
+    border-radius: 15px;
+    transition: all ease 1s;
+}
+
+.papa1 {
+    background-image: url(../../assets/img/nature.jpg);
+    background-size: cover;
+    height: 70vh;
+    min-height: 30vh;
+    text-shadow: 2px 2px 2px black;
+    border-radius: 15px;
+    transition: all ease 1s;
+}
+
+.papa2 {
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/13/00/03/girl-1736419_1280.jpg);
+    background-size: cover;
+    height: 70vh;
+    min-height: 30vh;
+    text-shadow: 2px 2px 2px black;
+    border-radius: 15px;
+    transition: all ease 1s;
+}
+
+.papa3 {
+    background-image: url(../../assets/img/children.jpg);
+    background-size: cover;
+    height: 70vh;
+    min-height: 30vh;
+    text-shadow: 2px 2px 2px black;
+    border-radius: 15px;
+    transition: all ease 1s;
+}
+
+.papa4 {
+    background-image: url(../../assets/img/hol.jpg);
+    background-size: cover;
+    height: 70vh;
+    min-height: 30vh;
+    text-shadow: 2px 2px 2px black;
+    border-radius: 15px;
+    transition: all ease 1s;
+}
+
+.papa5 {
+    background-image: url(../../assets/img/cat.jpg);
+    background-size: cover;
+    height: 70vh;
+    min-height: 30vh;
+    text-shadow: 2px 2px 2px black;
+    border-radius: 15px;
+    transition: all ease 1s;
+}
+
+.papa,
+.papa1,
+.papa2,
+.papa3,
+.papa4,
+.papa5 {
+    margin: 3vw 2vw !important;
+    -webkit-box-shadow: 4px 17px 65px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 17px 65px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 17px 65px -11px rgba(0, 0, 0, 0.75);
+}
+
+.white {
+    margin-top: 3vw;
+    background-color: black;
+    width: 100%;
+    height: 15vw;
+    clip-path: polygon(50% 0, 50% 0, 100% 45%, 100% 100%, 0 100%, 0 45%);
+    justify-content: center;
+    flex-wrap: wrap;
+    h1 {
+        padding-top: 6vw;
+        font-size: 4vw;
+        color: white;
+    }
+    img {
+        width: 20%;
+    }
+}
+
+.client-list {
+    background-color: black;
+    display: flex;
+    padding-bottom: 3vw;
+    justify-content: space-evenly;
+    img {
+        filter: grayscale(1) invert(1);
+        opacity: 1;
+        width: 12vw;
+        margin: 0 12px;
+        transition: all ease 1s;
+        padding: 1vw;
+    }
+}
+
+#hover:hover {
+    transition: all ease 1s;
+    filter: none;
+}
